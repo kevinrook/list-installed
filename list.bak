@@ -1,0 +1,8 @@
+#/bin/bash
+
+yum list installed >> yum-list.txt
+
+grep nginx < yum-list.txt
+grep php < yum-list.txt
+grep mysql < yum-list.txt
+grep mariadb < yum-list.txt
